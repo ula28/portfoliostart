@@ -5,7 +5,7 @@ import {Icon} from '../icon/Icon';
 export const Logo = () => {
 	return (	
 			<a href="">
-				<Icon iconId={'logo'} viewBox={"0 0 29 40"}  width={"29"} height={"40"} />
+				<Icon iconId={'logo'} viewBox={"0 0 30 40"}  width={"29"} height={"40"} />
 			</a>
 		
 	);

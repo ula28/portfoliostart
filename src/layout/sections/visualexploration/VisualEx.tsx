@@ -15,13 +15,13 @@ export const VisualExp = () => {
 	return (
 		<VisualExpStyled>
 			<SectionTitle>Visual Explorations</SectionTitle>
-			<FlexWrapper direction={"column"} align={"center"}>
-				<FlexWrapper>
+			<FlexWrapper direction={"column"} align={"center"} gaprow={"10px"}>
+				<FlexWrapper  gapcolumn={"10px"} >
 					<VisualImgStyled src={photoVisual} alt=""></VisualImgStyled>
 					<VisualImgStyled src={photoVisual1} alt=""></VisualImgStyled>
 					<VisualImgStyled src={photoVisual2} alt=""></VisualImgStyled>
 				</FlexWrapper>
-				<FlexWrapper>
+				<FlexWrapper  gapcolumn={"10px"} >
 					<VisualImgStyled src={photoVisual3} alt=""></VisualImgStyled>
 					<VisualImgStyled src={photoVisual4} alt=""></VisualImgStyled>
 					<VisualImgStyled src={photoVisual5} alt=""></VisualImgStyled>

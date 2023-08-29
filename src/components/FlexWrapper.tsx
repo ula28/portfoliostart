@@ -17,8 +17,8 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
 	justify-content: ${props => props.justify || "flex-start"};
 	align-items:${props => props.align || "stretch"};
 	flex-wrap:${props => props.wrap || "nowrap"};
-	column-gap:${props => props.gapcolumn || "10px"};
-	row-gap:${props => props.gaprow || "10px"};
+	column-gap:${props => props.gapcolumn || "0px"};
+	row-gap:${props => props.gaprow || "0px"};
 	margin-top:${props => props.marginTop || "0px"};
 `
 

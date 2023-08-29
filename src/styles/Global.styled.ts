@@ -1,0 +1,53 @@
+import { createGlobalStyle } from "styled-components";
+import  {theme}  from './Theme';
+
+export const GlobalStyle = createGlobalStyle`
+@font-face {
+	font-family: Tchicccboi; 
+	src: url(./assets/fonts/THICCCBOI-Bold.eot?) format("eot"),
+	url(./assets/fonts/THICCCBOI-Bold.woff2) format("woff2"),
+	url(./assets/fonts/THICCCBOI-Bold.ttf) format("truetype"),;
+	font-weight:bold;
+	font-style:normal;
+}
+*,
+*::before,
+*::after {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Manrope',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:${theme.colors.font}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.3s ease 0s;
+}
+ul li {
+	list-style: none;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: transparent;
+
+}
+
+section{
+	background-color: ${theme.colors.primaryBg};
+}
+
+
+`

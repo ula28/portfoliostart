@@ -12,7 +12,7 @@ export const PersonalProject = () => {
 	return (
 		<PersonalPrStyled>
 			<SectionTitle>Personal Projects</SectionTitle>
-			<FlexWrapper align={"center"} justify={"center"}>
+			<FlexWrapper align={"center"} justify={"center"} gapcolumn={"10px"}>
 				<PersonalPhoto src={sectionPhoto} alt=""></PersonalPhoto>
 				<PersonalPhoto src={sectionPhoto} alt=""></PersonalPhoto>
 				<PersonalPhoto src={sectionPhoto} alt=""></PersonalPhoto>
