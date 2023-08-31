@@ -7,6 +7,8 @@ export const theme = {
 		secondaryBg: "#9D9D9D",
 		accent: "rgba(50, 50, 50, 0.70)",
 
-		font:"#DEDEDE"
+		font:"#DEDEDE", 
+		borderBg:" #4a4a4a",
+		placeholderBg:"#49057"
 	}
 }

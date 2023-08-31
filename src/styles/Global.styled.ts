@@ -4,11 +4,13 @@ import  {theme}  from './Theme';
 export const GlobalStyle = createGlobalStyle`
 @font-face {
 	font-family: Tchicccboi; 
-	src: url(./assets/fonts/THICCCBOI-Bold.eot?) format("eot"),
+	src: local('Tchicccboi'),
+	url(./assets/fonts/THICCCBOI-Bold.eot?) format("eot"),
 	url(./assets/fonts/THICCCBOI-Bold.woff2) format("woff2"),
 	url(./assets/fonts/THICCCBOI-Bold.ttf) format("truetype"),;
 	font-weight:bold;
 	font-style:normal;
+	font-display:swap;
 }
 *,
 *::before,
@@ -27,7 +29,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color:${theme.colors.font}
+  color:${theme.colors.font};
+  line-height:1.2;
+
 }
 
 a {
@@ -47,7 +51,15 @@ button {
 
 section{
 	background-color: ${theme.colors.primaryBg};
+
+&:nth-of-type(n + 2){
+	padding-bottom:240px;
+	}
+&:last-of-type{
+		padding-bottom:125px;
+	}
 }
+
 
 
 `
