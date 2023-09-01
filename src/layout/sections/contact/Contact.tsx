@@ -3,28 +3,32 @@ import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { StyledButton } from '../../../components/StyledButton';
-import {Icon} from '../../../components/icon/Icon';
+import { Icon } from '../../../components/icon/Icon';
 import { theme } from '../../../styles/Theme';
+import {Container} from '../../../components/Container';
 
 
 export const Contact = () => {
 	return (
 		<ContactStyled>
-			<FlexWrapper direction={"column"} align={"center"} gaprow={"48px"}>
-				<SectionTitle mb={"0px"}>Contact Me</SectionTitle>
-				<ContactText>If you are looking to hire a product designer,
-					I’m currently available for freelance work
-				</ContactText>
-				<StyledForm>
-					<Field placeholder={"name"} />
-					<Field placeholder={"subjects"} />
-					<Field placeholder={"message"} as={"textarea"} />
-					<StyledButton color={"#000"} padding={"10px 10px"} type={"submit"}bg={"#e3f39f"}>Send message</StyledButton>
-				</StyledForm>
-				<StyledButton  as={"a"} >
-				<Icon iconId={'email'} viewBox={"0 0 23 19"} width={"20"} height={"16"} />
-				hi@yourname.com</StyledButton>
-			</FlexWrapper>
+			<Container>
+				<FlexWrapper direction={"column"} align={"center"} gaprow={"48px"}>
+					<SectionTitle mb={"0px"}>Contact Me</SectionTitle>
+					<ContactText>If you are looking to hire a product designer,
+						I’m currently available for freelance work
+					</ContactText>
+					<StyledForm>
+						<Field placeholder={"name"} />
+						<Field placeholder={"subjects"} />
+						<Field placeholder={"message"} as={"textarea"} />
+						<StyledButton color={"#000"} padding={"10px 10px"} type={"submit"} bg={"#e3f39f"}>Send message</StyledButton>
+					</StyledForm>
+					<StyledButton as={"a"} >
+						<Icon iconId={'email'} viewBox={"0 0 23 19"} width={"20"} height={"16"} />
+						hi@yourname.com</StyledButton>
+				</FlexWrapper>
+			</Container>
+
 		</ContactStyled>
 
 	);
@@ -43,7 +47,7 @@ font-weight: 600;
 letter-spacing: -0.5px;
 max-width:521px;
 align-items: center;
-	
+
 `
 const StyledForm = styled.form`
 	max-width:600px;

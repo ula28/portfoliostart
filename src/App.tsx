@@ -19,9 +19,9 @@ function App() {
 			<FeaturedWork />
 			<VisualExp />
 			<PersonalProject/>
-			{/* <Skills/>
-			<Works/>
-			<Testimony/> */}
+			 <Skills/> 
+			 {/* <Works/>
+			 <Testimony/>  */}
 			<Contact/>
 			<Footer/>
 		</div>

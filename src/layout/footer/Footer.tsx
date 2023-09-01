@@ -16,11 +16,11 @@ export const Footer = () => {
 						<Copyright>— Copyright 2021</Copyright>
 					</FooterBox>
 					<SocialList>
-						<SocialItem><SocialLink><Icon iconId={"whatsup"} /></SocialLink></SocialItem>
+						<SocialItem><SocialLink><Icon iconId={"whatsApp"} /></SocialLink></SocialItem>
 						<SocialItem><SocialLink><Icon iconId={"ball"} /></SocialLink></SocialItem>
-						<SocialItem><SocialLink><Icon iconId={"in"} /></SocialLink></SocialItem>
-						<SocialItem><SocialLink><Icon iconId={"twitter"} /></SocialLink></SocialItem>
-						<SocialItem><SocialLink><Icon iconId={"be"} /></SocialLink></SocialItem>
+						<SocialItem><SocialLink><Icon iconId={"in"}/></SocialLink></SocialItem>
+						<SocialItem><SocialLink><Icon iconId={"twitter"} width={"28"} viewBox={"0 0 28 22"} /></SocialLink></SocialItem>
+						<SocialItem><SocialLink><Icon iconId={"be"} viewBox={"0 0 30 18"} width={"30"} height={"18"}  /></SocialLink></SocialItem>
 					</SocialList>
 				</FlexWrapper>
 			</Container>
