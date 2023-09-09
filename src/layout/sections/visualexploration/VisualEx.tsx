@@ -9,6 +9,7 @@ import photoVisual3 from '../../../assets/img/prog8.webp';
 import photoVisual4 from '../../../assets/img/prog9.webp';
 import photoVisual5 from '../../../assets/img/prog10.webp';
 import { Container } from '../../../components/Container';
+import { theme } from '../../../styles/Theme';
 
 
 
@@ -17,8 +18,17 @@ export const VisualExp = () => {
 		<VisualExpStyled>
 			<Container>
 				<SectionTitle>Visual Explorations</SectionTitle>
-				<FlexWrapper direction={"column"} align={"center"} gaprow={"10px"}>
+				<GridWrapper>
+					<VisualImgStyled src={photoVisual} alt=""></VisualImgStyled>
+					<VisualImgStyled src={photoVisual1} alt=""></VisualImgStyled>
+					<VisualImgStyled src={photoVisual2} alt=""></VisualImgStyled>
+					<VisualImgStyled src={photoVisual3} alt=""></VisualImgStyled>
+					<VisualImgStyled src={photoVisual4} alt=""></VisualImgStyled>
+					<VisualImgStyled src={photoVisual5} alt=""></VisualImgStyled>
+				</GridWrapper>
+				{/* <FlexWrapper direction={"column"} align={"center"} gaprow={"10px"}>
 					<FlexWrapper gapcolumn={"10px"} >
+
 						<VisualImgStyled src={photoVisual} alt=""></VisualImgStyled>
 						<VisualImgStyled src={photoVisual1} alt=""></VisualImgStyled>
 						<VisualImgStyled src={photoVisual2} alt=""></VisualImgStyled>
@@ -28,7 +38,7 @@ export const VisualExp = () => {
 						<VisualImgStyled src={photoVisual4} alt=""></VisualImgStyled>
 						<VisualImgStyled src={photoVisual5} alt=""></VisualImgStyled>
 					</FlexWrapper>
-				</FlexWrapper>
+				</FlexWrapper> */}
 			</Container>
 		</VisualExpStyled>
 	);
@@ -38,11 +48,29 @@ const VisualExpStyled = styled.section`
 	
 	
 `
+const GridWrapper = styled.div`
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(360px, 1fr));
+	gap:24px;
+	justify-content:center;
+	align-content:center;
+	
+
+	@media ${theme.media.tablet}{
+
+		gap:15px;
+		padding: 0 10px 0 10px;
+		
+	}
+
+`
+
 
 const VisualImgStyled = styled.img`
 	object-fit:cover;
-	width: 400px;
-	height: 410px;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1 /1 ;
 `
 // const VisualBox=styled.div`
 // 	display: flex;

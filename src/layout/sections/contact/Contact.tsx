@@ -21,7 +21,8 @@ export const Contact = () => {
 						<Field placeholder={"name"} />
 						<Field placeholder={"subjects"} />
 						<Field placeholder={"message"} as={"textarea"} />
-						<StyledButton color={"#000"} padding={"10px 10px"} type={"submit"} bg={"#e3f39f"}>Send message</StyledButton>
+						<StyledButton color={"#989b8c"}
+						type={"submit"} bg={"#e3f39f"}>Send message</StyledButton>
 					</StyledForm>
 					<StyledButton as={"a"} >
 						<Icon iconId={'email'} viewBox={"0 0 23 19"} width={"20"} height={"16"} />

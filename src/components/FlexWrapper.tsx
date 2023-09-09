@@ -9,6 +9,7 @@ type FlexWrapperPropsType = {
 	gaprow?: string
 	marginTop?: string
 	padding?: string
+	flexG?: string
 }
 
 
@@ -23,5 +24,6 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
 	margin-top:${props => props.marginTop || "0px"};
 	height: 100%;
 	padding:${props=> props.padding || "0"};
+	flex-grow:${props=> props.flexG || "0"}
 `
 

@@ -15,15 +15,15 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
-			<Main />
+			 <Main />
 			<FeaturedWork />
 			<VisualExp />
 			<PersonalProject/>
-			 <Skills/> 
-			 {/* <Works/>
-			 <Testimony/>  */}
+			 {/* <Skills/> 
+			 <Works/>
+			 <Testimony/> 
 			<Contact/>
-			<Footer/>
+			<Footer/>  */}
 		</div>
 	);
 }

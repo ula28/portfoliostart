@@ -16,8 +16,8 @@ export const PersonalProject = () => {
 				<SectionTitle>Personal Projects</SectionTitle>
 				<FlexWrapper align={"center"} justify={"center"} gapcolumn={"10px"}>
 					<PersonalPhoto src={sectionPhoto} alt=""></PersonalPhoto>
-					<PersonalPhoto src={sectionPhoto} alt=""></PersonalPhoto>
-					<PersonalPhoto src={sectionPhoto} alt=""></PersonalPhoto>
+					<PersonalPhoto src={sectionPhoto1} alt=""></PersonalPhoto>
+					<PersonalPhoto src={sectionPhoto2} alt=""></PersonalPhoto>
 				</FlexWrapper>
 			</Container>
 		</PersonalPrStyled>

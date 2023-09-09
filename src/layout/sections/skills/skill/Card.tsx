@@ -44,7 +44,7 @@ const SkillTitle = styled.h3`
 	margin: 50px 0 15px 0;
 
 `
-const IconWrapper = styled.div`
+export const IconWrapper = styled.div`
 	position: relative;
 
 	&::before{
@@ -53,11 +53,11 @@ const IconWrapper = styled.div`
 		display: inline-block;
 		width: 70px;
 		height: 70px;
-		transform:rotate(45deg);
+		transform:rotate(45deg) translate(-50%, -50%);
 		background-color: rgba(155, 53, 53, 0.427);
-	 /* left: 50%;
-	top: 50%; */
-	/* transform-origin: top left;	  */
+		top:50%;
+		left:50%;
+		transform-origin: top left;	 
 	}
 
 

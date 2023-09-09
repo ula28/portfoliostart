@@ -54,12 +54,25 @@ section{
 
 &:nth-of-type(n + 2){
 	padding-bottom:240px;
+
+	@media ${theme.media.mobile}{
+			padding-bottom: 116px;
+		}
 	}
 &:last-of-type{
 		padding-bottom:125px;
 	}
 }
 
+h3{
+
+}
+
+p{
+	font-size:16px;
+	line-height:1.4;
+}
 
 
 `
+

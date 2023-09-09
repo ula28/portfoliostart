@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../styles/Theme';
 import { FlexWrapper } from '../FlexWrapper';
 
 
@@ -13,7 +14,7 @@ export const Slider = () => {
 			</FlexWrapper>
 			<Pagination>
 				<span></span>
-				<span></span>
+				<span className={"active"}></span>
 				<span></span>
 			</Pagination>
 		</StyledSlider>
@@ -21,7 +22,7 @@ export const Slider = () => {
 };
 
 export const StyledSlider = styled.div`
-border:1px solid;
+/* border:1px solid; */
 max-width:500px;
 display: flex;
 flex-direction:column;
@@ -41,6 +42,8 @@ export const Text = styled.p`
 
 `
 export const Name = styled.span`
+margin: 22px 0;
+display: inline-block;
 
 
 `
@@ -51,11 +54,20 @@ align-items: center;
 
 span{
 	/* display: inline-block; */
-	width: 5px;
-	height: 5px;
-background-color: #082210;
+	width: 7px;
+	height: 7px;
+background-color: #75ee9b;
+border-radius:20px;
 
+/* & + span {
+	margin-left: 5px;
+} */
+&.active{
+	background-color: ${theme.colors.accent};
+	width: 20px;
+		}
 }
+
 
 `
 

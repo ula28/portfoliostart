@@ -12,7 +12,7 @@ export const Skills = () => {
 			<Container>
 				<SectionTitle>My Skills</SectionTitle>
 				<FlexWrapper wrap={"wrap"} justify={"space-between"}>
-					<Card iconId={"ts"}
+					<Card iconId={"ts"} viewBox={"0 0 40 40"} width={"40"} height={"40"}
 						title={"html5"}
 						description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
 					<Card iconId={"be"} viewBox={"0 0 30 18"} width={"30"} height={"18"}  
