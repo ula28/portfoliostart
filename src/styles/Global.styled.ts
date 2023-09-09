@@ -55,6 +55,10 @@ section{
 &:nth-of-type(n + 2){
 	padding-bottom:240px;
 
+	@media ${theme.media.tablet}{
+			padding-bottom: 130px;
+		}
+
 	@media ${theme.media.mobile}{
 			padding-bottom: 116px;
 		}

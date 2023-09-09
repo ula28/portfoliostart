@@ -26,7 +26,7 @@ export const FeaturedWork = () => {
 					</a>
 					<Title>Featured Work</Title>
 				</FeaturedTop>
-				<FlexWrapper align={"start"} gapcolumn={"10px"} wrap={width < 1024 ? 'wrap' : undefined}>
+				<FlexWrapper justify={"space-around"} align={"start"} gapcolumn={"10px"} wrap={width < 1024 ? 'wrap' : undefined}>
 					{/* <FeaturedBoxTop> */}
 					{/* <FeaturedWorkPhoto src={myTheme.photos.src1} alt=""></FeaturedWorkPhoto>
 					<FeaturedWorkPhoto src={myTheme.photos.src2} alt=""></FeaturedWorkPhoto> */}
@@ -38,7 +38,7 @@ export const FeaturedWork = () => {
 					</FeaturedBoxTop>
 
 					<FeaturedBoxBottom>
-						<FlexWrapper direction={"column"} gaprow={"10px"} marginTop={"140px"} >
+						<FlexWrapper direction={"column"} gaprow={"10px"}  marginTop={"140px"} >
 							{/* <FeaturedWorkPhoto src={myTheme.photos.src3} alt=""></FeaturedWorkPhoto>
 					<FeaturedWorkPhoto src={myTheme.photos.src4} alt=""></FeaturedWorkPhoto> */}
 							<FeaturedWorkPhoto src={fotowork2} alt=""></FeaturedWorkPhoto>
@@ -59,15 +59,16 @@ const FeaturedWorkStyled = styled.section`
 		}
 	`
 const FeaturedBoxTop = styled.div`
-	max-width:612px;
-	width:100%;
-	display: flex;
-justify-items:center;
+	/* display: flex;
+	gap:20px; */
+	
+/* justify-content:center; */
 	/* flex:1 0 auto; */
 `
 const FeaturedBoxBottom = styled.div`
-	max-width:612px;
+	/* max-width:612px; */
 	width:100%;
+	/* justify-content:center; */
 
 
 	/* flex:1 0 auto; */
@@ -79,8 +80,9 @@ const FeaturedWorkPhoto = styled.img`
 		object-fit:cover;
 		/* display: flex; */
 		@media ${theme.media.mobile}{
-			width:366px;
-		height:600px;
+		
+		
+		min-height:600px;
 		}
 `
 const FeaturedTop = styled.div`
@@ -97,10 +99,7 @@ line-height: 16px; /* 100% */
 letter-spacing: 1.5px;
 text-transform: uppercase;
 color:${theme.colors.secondaryBg};
-
-@media ${theme.media.tablet}{
-		
-	} 
+ 
 @media ${theme.media.mobile}{
 		font-size: 18px;
 		font-weight: 600;
