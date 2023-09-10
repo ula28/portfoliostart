@@ -15,7 +15,7 @@ export const PersonalProject = () => {
 		<PersonalPrStyled>
 			<Container>
 				<SectionTitle>Personal Projects</SectionTitle>
-				<FlexWrapper align={"center"} justify={"space-around"} gapcolumn={"10px"} wrap={"wrap"} gaprow={"10px"}>
+				<FlexWrapper align={"center"} gapcolumn={"10px"} wrap={"wrap"} gaprow={"10px"}>
 					<PersonalPhoto src={sectionPhoto} alt=""></PersonalPhoto>
 					<PersonalPhoto src={sectionPhoto1} alt=""></PersonalPhoto>
 					<PersonalPhoto src={sectionPhoto2} alt=""></PersonalPhoto>
@@ -31,18 +31,20 @@ const PersonalPrStyled = styled.section`
 	/* background-color: #677752; */
 `
 const PersonalPhoto = styled.img`
-		max-width:400px;
+		width:400px;
+		flex-grow:1;
 		min-height:560px;
 		
 		object-fit:cover;
 	
 
-		@media screen and (max-width:1250px){
+		 @media screen and (max-width:1250px){
 			max-width:100%;
-		}
+		} 
 
 		@media ${theme.media.mobile}{
 			min-height:600px;
+			width: 366px;
 		}
 
 	

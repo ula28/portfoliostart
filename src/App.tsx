@@ -21,9 +21,9 @@ function App() {
 			<PersonalProject/>
 			 {/* <Skills/> 
 			 <Works/>
-			 <Testimony/> 
+			 <Testimony/>  */}
 			<Contact/>
-			<Footer/>  */}
+			<Footer/> 
 		</div>
 	);
 }

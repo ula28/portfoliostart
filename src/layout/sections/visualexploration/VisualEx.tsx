@@ -57,10 +57,7 @@ const GridWrapper = styled.div`
 	
 
 	@media ${theme.media.tablet}{
-
 		gap:15px;
-		padding: 0 10px 0 10px;
-		
 	}
 
 `
@@ -71,6 +68,10 @@ const VisualImgStyled = styled.img`
 	width: 100%;
 	height: 100%;
 	aspect-ratio: 1 /1 ;
+
+	/* @media ${theme.media.mobile}{
+		max-width:366px;
+	} */
 `
 // const VisualBox=styled.div`
 // 	display: flex;

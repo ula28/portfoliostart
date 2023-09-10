@@ -9,7 +9,7 @@ import fotowork3 from '../../../assets/img/prog4.webp';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
 import { theme } from '../../../styles/Theme';
-import {useWindowSize} from '../../../styles/useWindowSize'
+import { useWindowSize } from '../../../styles/useWindowSize'
 
 
 
@@ -26,19 +26,16 @@ export const FeaturedWork = () => {
 					</a>
 					<Title>Featured Work</Title>
 				</FeaturedTop>
-				<FlexWrapper justify={"space-around"} align={"start"} gapcolumn={"10px"} wrap={width < 1024 ? 'wrap' : undefined}>
-					{/* <FeaturedBoxTop> */}
-					{/* <FeaturedWorkPhoto src={myTheme.photos.src1} alt=""></FeaturedWorkPhoto>
-					<FeaturedWorkPhoto src={myTheme.photos.src2} alt=""></FeaturedWorkPhoto> */}
+				<FlexWrapper gapcolumn={"10px"} wrap={width < 1024 ? 'wrap' : undefined}>
 					<FeaturedBoxTop>
-						<FlexWrapper direction={"column"} gaprow={"10px"} >
+						<FlexWrapper direction={"column"} gaprow={"10px"}   >
 							<FeaturedWorkPhoto src={fotowork} alt=""></FeaturedWorkPhoto>
 							<FeaturedWorkPhoto src={fotowork1} alt=""></FeaturedWorkPhoto>
 						</FlexWrapper>
 					</FeaturedBoxTop>
 
 					<FeaturedBoxBottom>
-						<FlexWrapper direction={"column"} gaprow={"10px"}  marginTop={"140px"} >
+						<FlexWrapper direction={"column"} gaprow={"10px"} align={""} >
 							{/* <FeaturedWorkPhoto src={myTheme.photos.src3} alt=""></FeaturedWorkPhoto>
 					<FeaturedWorkPhoto src={myTheme.photos.src4} alt=""></FeaturedWorkPhoto> */}
 							<FeaturedWorkPhoto src={fotowork2} alt=""></FeaturedWorkPhoto>
@@ -59,30 +56,47 @@ const FeaturedWorkStyled = styled.section`
 		}
 	`
 const FeaturedBoxTop = styled.div`
-	/* display: flex;
-	gap:20px; */
+	/* flex: 1 0 400px; */
+	flex:1;
+
+	@media ${theme.media.tablet}{
+			flex: none;
+			width: 100%;
+			/* max-width:400px; */
+		}
 	
 /* justify-content:center; */
 	/* flex:1 0 auto; */
 `
 const FeaturedBoxBottom = styled.div`
 	/* max-width:612px; */
-	width:100%;
+	/* width:100%; */
 	/* justify-content:center; */
+	margin-top: 140px;
+	flex:1;
+	/* flex: 1 0 400px; */
+	
+	@media ${theme.media.tablet}{
+			flex: none;
+			width: 100%;
+			margin-top: 0;
+			/* max-width:400px; */
 
-
-	/* flex:1 0 auto; */
+		}
 `
 
 const FeaturedWorkPhoto = styled.img`
-		width: 100%;
+		 width: 100%; 
+		/* width:366px; */
+		/* flex-grow:1; */
+		/* aspect-ratio:9 / 16; */
 		height:888px;
 		object-fit:cover;
-		/* display: flex; */
+
 		@media ${theme.media.mobile}{
+		/* width:366px; */
+		max-height:600px;
 		
-		
-		min-height:600px;
 		}
 `
 const FeaturedTop = styled.div`

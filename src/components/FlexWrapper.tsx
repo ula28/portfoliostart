@@ -10,7 +10,7 @@ type FlexWrapperPropsType = {
 	gaprow?: string
 	marginTop?: string
 	padding?: string
-	flexG?: string
+	
 }
 
 
@@ -25,15 +25,19 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
 	margin-top:${props => props.marginTop || "0px"};
 	height: 100%;
 	padding:${props=> props.padding || "0"};
-	flex-grow:${props=> props.flexG || "0"};
 
-	
-@media screen and (max-width:1024px){
-		max-width:100%;
-		margin-top:0;
-		gap:24px;
+
+	@media ${theme.media.tablet}{
+		row-gap:15px;
+		
 	}
 
 	
+	@media ${theme.media.mobile}{
+		row-gap:24px;
+		
+	}
+	
+
 `
 

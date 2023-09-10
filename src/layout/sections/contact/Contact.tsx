@@ -6,6 +6,7 @@ import { StyledButton } from '../../../components/StyledButton';
 import { Icon } from '../../../components/icon/Icon';
 import { theme } from '../../../styles/Theme';
 import {Container} from '../../../components/Container';
+import { font } from '../../../styles/Common';
 
 
 export const Contact = () => {
@@ -43,11 +44,14 @@ const ContactStyled = styled.section`
 const ContactText = styled.p`
 color: #959595;
 text-align: center;
-font-size: 26px;
-font-weight: 600;
+${font({ weight: 600, color: '#959595', Fmax: 26, Fmin: 18, Vmax: 1440, Vmin: 360, lineHeight:1.4 })}
 letter-spacing: -0.5px;
 max-width:521px;
 align-items: center;
+
+@media ${theme.media.mobile}{
+		font-weight: 500;
+	}
 
 `
 const StyledForm = styled.form`

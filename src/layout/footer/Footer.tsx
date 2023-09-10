@@ -10,7 +10,7 @@ export const Footer = () => {
 	return (
 		<StyledFooter>
 			<Container>
-				<FlexWrapper justify={"space-between"} padding={"48px 0 36px 0"}>
+				<FlexWrapper justify={"space-around"} gapcolumn={"25px"} wrap={"wrap-reverse"} >
 					<FooterBox>
 						<FooterText>Made by <span> Your Name</span></FooterText>
 						<Copyright>— Copyright 2021</Copyright>
@@ -30,9 +30,14 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
 background-color: #202020;
+border-top:1px solid #696969;;
 padding:48px 0 36px 0;
 font-weight: 600;
 letter-spacing: -0.5px;
+@media ${theme.media.mobile}{
+	padding:48px 0 66px 0;
+	
+}
 `
 
 const FooterText = styled.p`
@@ -45,9 +50,14 @@ const FooterText = styled.p`
 `
 const SocialList = styled.ul`
 display: flex;
-gap:43px;
+column-gap:43px;
 align-items: center;
 justify-content: space-between;
+@media ${theme.media.mobile}{
+	column-gap:32px;
+	padding-bottom:10px;
+}
+
 
 `
 const SocialItem = styled.li`
@@ -62,6 +72,10 @@ display: flex;
 align-items: center;
 gap: 5px;
 color:#959595;
+
+@media screen and (max-width:596px){
+
+}
 	
 `
 const Copyright = styled.small`
